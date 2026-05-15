@@ -1,153 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reconnectly — Privacy Policy</title>
+  <meta name="description" content="Reconnectly 隐私政策 — 本地优先关系提醒应用（独立开发者）。版本 v2026-05-15。" />
+  <title>隐私政策 — Reconnectly</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; max-width: 48rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; color: #111; }
-    @media (prefers-color-scheme: dark) { body { color: #eee; background: #121212; } a { color: #8ab4ff; } }
-    h1 { font-size: 1.75rem; margin-top: 0; }
-    h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid rgba(0,0,0,.12); padding-bottom: .25rem; }
-    @media (prefers-color-scheme: dark) { h2 { border-bottom-color: rgba(255,255,255,.15); } }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", sans-serif; line-height: 1.65; max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; color: #1a1a1a; background: #fff; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121417; }
+      .meta { color: #aaa; }
+      h2 { border-bottom-color: rgba(255,255,255,.2); }
+      th, td { border-color: rgba(255,255,255,.25); }
+      th { background: rgba(255,255,255,.08); }
+      .notice { background: rgba(255,255,255,.06); border-left-color: #888; }
+      .notice.important { border-left-color: #c08400; background: rgba(192,132,0,.12); }
+    }
+    h1 { font-size: 1.55rem; margin-top: 0; line-height: 1.3; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; border-bottom: 1px solid rgba(128,128,128,.35); padding-bottom: .3rem; }
+    h3 { font-size: 1rem; margin-top: 1.2rem; }
     p, li { font-size: 0.95rem; }
-    .muted { opacity: .85; font-size: 0.9rem; }
-    .box { border: 1px solid rgba(0,0,0,.12); border-radius: .5rem; padding: .75rem 1rem; margin: 1rem 0; }
-    @media (prefers-color-scheme: dark) { .box { border-color: rgba(255,255,255,.15); } }
-    ul { padding-left: 1.25rem; }
-    .small { font-size: 0.85rem; }
-    a { word-break: break-all; }
+    ul, ol { padding-left: 1.35rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1rem 0; }
+    th, td { border: 1px solid rgba(128,128,128,.4); padding: 0.5rem 0.65rem; text-align: left; vertical-align: top; }
+    th { background: rgba(128,128,128,.1); }
+    .meta { color: #555; font-size: 0.9rem; margin-bottom: 1.25rem; }
+    .notice { border-left: 4px solid #444; padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(128,128,128,.07); font-size: 0.93rem; }
+    .notice.important { border-left-color: #b45309; background: rgba(180,83,9,.08); }
+    a { color: #2563eb; }
+    @media (prefers-color-scheme: dark) { a { color: #7ba6ff; } }
+    code { font-size: 0.88em; word-break: break-word; }
+    .en { margin-top: 2.75rem; padding-top: 1.75rem; border-top: 2px solid rgba(128,128,128,.35); }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — Reconnectly</h1>
-  <p class="muted"><strong>Last updated:</strong> 13 May 2026 &nbsp;|&nbsp; <strong>Effective date:</strong> 13 May 2026</p>
 
-  <p>
-    This Privacy Policy describes how the operator of the mobile application <strong>Reconnectly</strong>
-    (“<strong>Reconnectly</strong>”, the “<strong>App</strong>”) processes information when you install and use the App.
-    Reconnectly is operated by an <strong>independent developer</strong> (referred to as “<strong>we</strong>”, “<strong>us</strong>”, or “<strong>our</strong>”).
-    This policy is designed to meet common App Store transparency expectations and to reflect how the App is built today:
-    <strong>local-first reminders and notes</strong>, without a first-party account system and without our own cloud database for core App features.
+<header>
+  <h1>隐私政策 — Reconnectly</h1>
+  <p class="meta">
+    <strong>版本：</strong>v2026-05-15<br />
+    <strong>生效日期：</strong>2026 年 5 月 15 日（UTC 日历日；强制性法律另有规定的从其规定）<br />
+    <strong>应用：</strong>Reconnectly（通过 Apple App Store 分发，含 iPhone 与 iPad 兼容形态）<br />
+    <strong>运营者：</strong>独立个人开发者（「我们」「运营者」）
   </p>
+</header>
 
-  <div class="box">
-    <p class="small"><strong>Contact (privacy &amp; data requests):</strong><br />
-      Email: <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>
-    </p>
+<div class="notice important">
+  <p><strong>核心摘要（请优先阅读）：</strong>Reconnectly 是<strong>本地优先</strong>的私人关系维护与提醒工具。<strong>您录入或导入的联系人、笔记、提醒设置等数据默认仅保存在您的设备上</strong>；运营者<strong>不运营</strong>用于存储您联系人内容的云端数据库，<strong>不会</strong>将您的联系人内容上传至运营者服务器，<strong>不使用</strong>生成式 AI 分析您的私人内容，<strong>不进行</strong>跨 App/跨网站广告跟踪，<strong>不出售</strong>您的个人信息。可选的 Pro 订阅（月付/年付）通过 <strong>Apple App Store（StoreKit）</strong> 处理；本地 JSON 备份/恢复由您通过系统分享/文件选择自行完成（如 AirDrop、iCloud Drive），运营者不接收备份文件。</p>
+</div>
+
+<div class="notice">
+  <p><strong>非医疗/非心理咨询声明：</strong>Reconnectly 仅提供关系联系节奏、生日/纪念日/自定义重要日期及您自定义事件的<strong>可选提醒</strong>与设备本地统计，<strong>不提供</strong>心理咨询、心理治疗、医疗诊断、危机干预或紧急服务。提醒与文案模板仅供个人备忘，不构成专业建议；紧急情况请拨打当地紧急电话或联系专业机构。</p>
+  <p><strong>法律提示：</strong>本政策旨在满足透明度义务；<strong>不构成正式法律意见</strong>。重大合规事项请咨询持证律师。在适用法律允许的最大范围内，服务按「现状」与「可用」基础提供。</p>
+</div>
+
+<h2>1. 控制者与联系方式</h2>
+<p>Reconnectly 由<strong>独立个人开发者</strong>运营。与本政策相关的请求请联系：<a href="mailto:hello@familymedvault.com?subject=Reconnectly%20%E9%9A%90%E7%A7%81%20%2F%20Privacy">hello@familymedvault.com</a>（邮件主题请注明「Reconnectly 隐私」）。为保护安全，我们可能要求您在合理范围内验证身份；对明显重复、无依据或过度频繁的请求，在法律允许范围内我们可能收取合理费用或拒绝。</p>
+<p>相关链接：<a href="https://jchen8863988.github.io/Reconnectly-legal/support.html">技术支持</a> · <a href="https://jchen8863988.github.io/Reconnectly-legal/eula.html">用户协议（EULA）</a></p>
+
+<h2>2. 适用范围</h2>
+<ul>
+  <li><strong>应用：</strong>通过 Apple App Store 下载的 Reconnectly iOS 应用（含 TestFlight 测试构建，若您参与）。</li>
+  <li><strong>静态法律页面：</strong><code>jchen8863988.github.io/Reconnectly-legal</code> 上托管的本政策、用户协议与支持说明（仅页面访问，不收集应用内联系人内容）。</li>
+  <li><strong>不包括：</strong>第三方网站或服务（如 Apple、您自行选择的云盘或通讯 App）；其处理受其自身条款约束。</li>
+  <li><strong>开发/测试构建说明：</strong>若您使用内部开发客户端（Dev Client）或 TestFlight 测试版，应用可能请求<strong>本地网络</strong>权限以从开发机加载调试资源；该行为<strong>仅用于开发/测试</strong>，不向运营者上传您的联系人内容。通过 App Store 正式发布的生产版本以实际权限提示为准。</li>
+</ul>
+
+<h2>3. 与 Apple App Store「App 隐私」营养标签的对照（摘要）</h2>
+<p>下列摘要便于对照 Apple 透明度维度；<strong>详细规则以后文为准</strong>。我们在 App Store Connect 中填报的隐私营养标签应与<strong>当前版本应用实际行为</strong>及本政策一致。</p>
+<table>
+  <thead><tr><th>主题</th><th>我们的实践（概要）</th></tr></thead>
+  <tbody>
+    <tr><td>用于跨 App/网站跟踪（广告画像）</td><td><strong>否</strong> — 无广告 SDK、无跨站跟踪、不出售数据用于此类目的。</td></tr>
+    <tr><td>运营者是否从您设备远程读取联系人数据库</td><td><strong>否</strong> — 无运营者云端联系人库；无账号登录体系。</td></tr>
+    <tr><td>生成式 AI / 云端内容分析</td><td><strong>否</strong> — 不使用 AI 处理您的笔记或联系人；节奏类提醒文案在缺少笔记/话题时使用<strong>设备内置、预置</strong>的本地模板轮换（非 AI）。</td></tr>
+    <tr><td>分析 / 第三方广告</td><td>当前版本<strong>未集成</strong>主流第三方广告或行为分析 SDK（若未来变更，将更新本政策并在法律要求时取得必要同意）。</td></tr>
+    <tr><td>购买（Pro 订阅）</td><td>通过 <strong>Apple StoreKit</strong>（月付/年付自动续订）；支付与账单由 Apple 处理；设备本地缓存订阅状态以解锁功能。</td></tr>
+    <tr><td>联系信息（姓名、电话、邮箱等）</td><td>由<strong>您在设备上</strong>录入或从系统通讯录<strong>经您授权</strong>导入；<strong>不</strong>上传至运营者服务器。</td></tr>
+    <tr><td>用户内容（笔记、提醒设置等）</td><td>仅存于设备本地数据库；备份导出由您自行保存到所选位置。</td></tr>
+  </tbody>
+</table>
+<h2>4. 我们处理哪些信息、存在何处</h2>
+<h3>4.1 设备本地数据（核心）</h3>
+<p>在您使用应用时，以下信息默认保存在您设备上的本地数据库（SQLite）及系统提供的本地存储（如偏好设置持久化）中，<strong>不会</strong>因正常使用而传输至运营者服务器：</p>
+<ul>
+  <li>联系人资料：姓名、关系类型、偏好联系渠道（如短信/电话/咖啡/邮件）、联系频率（天数）、上次联系日期；</li>
+  <li>可选字段：生日、纪念日、电子邮件、电话号码、笔记、下次话题、自定义分类、自定义重要事件（标签与日期）；</li>
+  <li>互动记录：您标记「已联系」等操作产生的时间信息；</li>
+  <li>应用设置：界面语言（中文/英文）、浅色/深色主题、是否开启本地通知、已忽略的应用内提醒项、免费/Pro 订阅状态（本地记录）、引导完成状态、上次成功导出备份的时间戳等；</li>
+  <li>本地统计与洞察：基于上述数据在设备上计算的「关系热度」、节奏分布、待联系提醒列表、报告页指标等（Pro 可含更多统计视图）；免费版联系人数量上限为 <strong>30</strong> 个，Pro 可无限制（以应用内展示为准）。</li>
+</ul>
+
+<h3>4.2 从系统通讯录导入（可选，经您授权）</h3>
+<p>若您使用「从通讯录导入」，应用在您授权后通过 iOS <strong>Contacts</strong> 框架读取您允许访问的条目（含 iOS「有限通讯录访问」下您勾选的联系人），通常映射为<strong>姓名</strong>，以及在系统通讯录中存在时的<strong>首个电话号码、首个电子邮件地址、生日</strong>。我们<strong>不会</strong>批量上传您的通讯录至运营者服务器。导入后数据作为 Reconnectly 联系人保存在<strong>本机</strong>；默认关系类型与提醒周期可在应用内修改。您可随时在系统「设置 → 隐私与安全性 → 通讯录」中撤销或调整权限。</p>
+
+<h3>4.3 本地通知（可选，经您授权）</h3>
+<p>若您开启通知权限，应用使用 <strong>Apple 本地通知（UserNotifications）</strong> 在设备上调度提醒，例如：联系节奏到期、生日/纪念日、自定义重要事件；Pro 用户在开启通知且长期未导出备份时，可能收到约每 90 天一次的温和「建议备份」本地提醒。通知标题与正文根据您设备上的联系人信息在<strong>本机</strong>生成（可结合关系类型、偏好渠道、您的笔记/下次话题，或在内置本地问候模板中轮换）；<strong>不</strong>依赖运营者推送服务器。您可在系统设置或应用内关闭通知；关闭后我们将取消已调度的本地通知（在法律允许的技术范围内）。</p>
+
+<h3>4.4 快捷联系与系统跳转（经您操作）</h3>
+<p>联系人卡片或详情中的快捷操作（如短信、电话、邮件）通过 iOS 系统 URL 方案（<code>sms</code>、<code>tel</code>、<code>mailto</code>）打开<strong>系统或您安装的第三方 App</strong>；内容由<strong>您</strong>在对应 App 中发送，运营者不介入、不读取通讯内容。</p>
+
+<h3>4.5 本地 JSON 备份与导入（Pro；手动；无云同步）</h3>
+<p>Pro 用户可将应用数据导出为 <strong>JSON 文件</strong>（含联系人、部分应用设置及订阅计划字段等，以导出时版本为准），通过 iOS 系统分享面板保存到您选择的位置（如「文件」、AirDrop、iCloud Drive、第三方网盘等）。<strong>运营者不接收、不托管、不扫描</strong>该文件。从备份恢复时，您通过系统文件选择器选择 JSON；数据写回<strong>本机</strong>。换机、丢失设备或备份文件损坏的风险由您自行承担；我们建议您妥善保管备份并验证恢复结果。</p>
+
+<h3>4.6 订阅（StoreKit）</h3>
+<p>Pro 功能（如无限联系人、高级统计/洞察、自定义分类、任意天数联系节奏、本地 JSON 备份/导入等）通过 App Store 自动续订订阅（<strong>月付与年付</strong>，以产品页面与 StoreKit 商品为准）解锁。交易、退款与订阅管理由 <strong>Apple</strong> 处理；我们<strong>不</strong>直接处理您的银行卡信息。应用通过 StoreKit 在设备本地读取订阅状态以启用功能；<strong>不向运营者服务器回传</strong>购买凭证用于建账（无账号体系）。</p>
+
+<h3>4.7 我们不会做的事（当前版本）</h3>
+<ul>
+  <li>不要求注册账号、不运营用户登录服务器；</li>
+  <li>不提供运营者托管的云同步或多人协作；</li>
+  <li>不使用生成式 AI、不上传联系人内容供模型训练或推理；</li>
+  <li>不读取您的短信、邮件、微信或其他第三方聊天内容；</li>
+  <li>不出售、出租或以金钱对价共享您的个人信息给数据经纪；</li>
+  <li>不在应用内投放第三方行为广告。</li>
+</ul>
+<h2>5. 处理目的与法律依据（概要）</h2>
+<ul>
+  <li><strong>提供核心功能：</strong>记录关系、计算提醒时间、展示统计与洞察、导出备份；</li>
+  <li><strong>履行合同：</strong>在您订阅 Pro 时，按 Apple 规则提供相应功能；</li>
+  <li><strong>征得同意：</strong>通讯录、通知等系统权限仅在您授权后使用；</li>
+  <li><strong>合法权益：</strong>在必要时维护应用安全、修复错误、回应您的支持请求（不扩大至无关画像）。</li>
+</ul>
+
+<h2>6. 存储期限与删除</h2>
+<ul>
+  <li><strong>设备本地数据：</strong>在您卸载应用、清除应用数据或主动删除联系人前一直保留；</li>
+  <li><strong>您主动删除：</strong>可在应用内删除单个联系人；可在设置中管理提醒与偏好；</li>
+  <li><strong>备份文件：</strong>保存在您自行选择的位置，由您自行删除；</li>
+  <li><strong>支持邮件：</strong>若您联系我们，邮件内容保留时间以合理处理纠纷与改进支持为限，通常不超过必要期限。</li>
+</ul>
+
+<h2>7. 共享与披露</h2>
+<p>我们<strong>不出售</strong>您的个人信息。除以下情形外，运营者<strong>不会</strong>共享您设备上的联系人内容：</p>
+<ul>
+  <li><strong>经您指示的共享：</strong>您使用「导出/分享」备份或调用 <code>mailto</code> / <code>sms</code> / <code>tel</code> 跳转至系统或第三方 App 时，由<strong>您</strong>选择接收方；</li>
+  <li><strong>Apple：</strong>处理 IAP、系统通知、App Store 分发与 TestFlight；</li>
+  <li><strong>法律要求：</strong>在有效法律程序要求且法律允许时披露（在无运营者副本的前提下，我们可能仅能配合与运营者相关的元数据，例如支持邮件）；</li>
+  <li><strong>保护权利：</strong>为预防欺诈、滥用或保护用户与运营者安全所合理必要且法律允许时。</li>
+</ul>
+
+<h2>8. 国际传输</h2>
+<p>运营者<strong>不</strong>将您的联系人内容传输至境外服务器进行存储。静态法律页面可能由 <strong>GitHub Pages</strong>（Microsoft GitHub）托管，仅涉及对公开 HTML 页面的访问日志级信息，由 GitHub 按其隐私政策处理。您自行将备份存至境外云盘时，由该服务提供商按其条款处理。</p>
+
+<h2>9. 安全</h2>
+<p>我们采用本地数据库、系统权限最小化、无远程联系人库等设计降低风险。但任何电子存储与传输都无法保证绝对安全；您应启用设备密码/生物识别，并妥善保管备份文件。若您怀疑设备丢失，请尽快使用系统功能远程锁定或抹除设备。</p>
+
+<h2>10. 您的权利</h2>
+<p>根据您所在地区法律，您可能享有访问、更正、删除、限制处理、反对处理、数据可携带等权利。因数据主要在<strong>您的设备</strong>上，您通常可直接在应用内修改或删除；卸载应用可删除本地应用数据。若需协助，请发送邮件至上述地址。我们将在合理期限内回复；您亦有权向有管辖权的监管机构投诉（若适用）。</p>
+<p><strong>加利福尼亚（CCPA/CPRA）居民：</strong>我们不出售或共享个人信息用于跨情境行为广告；本应用当前不面向加州居民提供金钱对价的「出售」。</p>
+
+<h2>11. 儿童隐私</h2>
+<p>Reconnectly 面向年满 <strong>13 周岁</strong>（或您所在司法辖区规定的更高年龄）的用户，<strong>并非</strong>面向儿童。我们不会故意收集 13 岁以下儿童的个人信息。若您认为我们无意中持有相关信息，请联系我们，我们将采取合理步骤删除（在法律允许范围内）。</p>
+
+<h2>12. 第三方服务与链接</h2>
+<p>应用可能打开 Apple 邮件、短信、电话等系统功能；也可能在您导出备份时由您选择第三方 App。这些服务由第三方控制，我们不对其隐私做法负责。请参阅 Apple 与相关第三方的隐私政策。</p>
+
+<h2>13. 政策变更</h2>
+<p>我们可能更新本政策。重大变更时，我们将在应用内和/或法律页面公布更新版本与生效日期；在法律要求时征求必要同意。继续使用即表示您在法律允许范围内接受更新后的政策。</p>
+
+<h2>14. 责任限制（个人开发者）</h2>
+<p>在适用法律允许的最大范围内：</p>
+<ul>
+  <li>Reconnectly 按「现状」「可用」提供；运营者（独立个人开发者）对因使用或无法使用应用导致的间接、附带、特殊、惩罚性或后果性损害不承担责任；</li>
+  <li>运营者对因依赖提醒内容、本地模板文案、统计/洞察结果或您与他人的互动后果不承担责任；</li>
+  <li>因您未备份、备份损坏、设备丢失、误删数据、第三方云盘或通讯 App 行为造成的损失，运营者不承担责任；</li>
+  <li>对 Apple 服务中断、StoreKit 或系统通知故障不承担责任；</li>
+  <li>在任何情况下，运营者对可主张的直接损失赔偿责任总额以您在过去十二（12）个月内向运营者直接支付的金额（如有）或适用法律允许的更低上限为限；免费用户场景下可能为零。</li>
+</ul>
+<p>部分司法辖区不允许排除某些保证或限制责任；上述限制在该等法律下仅在其允许的最大范围内适用。</p>
+
+<h2>15. 联系与数据请求</h2>
+<p>隐私与支持：<a href="mailto:hello@familymedvault.com?subject=Reconnectly%20Privacy">hello@familymedvault.com</a></p>
+<p>技术支持页面：<a href="https://jchen8863988.github.io/Reconnectly-legal/support.html">https://jchen8863988.github.io/Reconnectly-legal/support.html</a></p>
+<section class="en" lang="en">
+  <h1>Privacy Policy — Reconnectly</h1>
+  <p class="meta"><strong>Version:</strong> v2026-05-15 · <strong>Effective:</strong> 15 May 2026 · <strong>Operator:</strong> independent individual developer</p>
+
+  <div class="notice important">
+    <p><strong>Summary:</strong> Reconnectly is a <strong>local-first</strong> relationship reminder app for iPhone and iPad. Contact data you enter or import stays <strong>on your device</strong> by default. We do <strong>not</strong> operate a cloud database for your contacts, do <strong>not</strong> upload contact content to our servers, do <strong>not</strong> use generative AI on your private content, do <strong>not</strong> track you across apps/sites for ads, and do <strong>not sell</strong> personal information. Pro subscriptions (monthly/yearly) are processed by <strong>Apple (StoreKit)</strong>. JSON backup/export is manual via the system share sheet; we never receive your backup files.</p>
   </div>
 
-  <h2 id="scope">1. Scope</h2>
-  <p>This policy applies to the Reconnectly App distributed on Apple platforms (including the iOS/iPadOS versions made available through the Apple App Store) and, where applicable, other distribution channels that ship the same codebase. It does not apply to third-party websites, payment flows, or policies operated solely by Apple or other companies (see Section 6).</p>
+  <h2>1. Controller &amp; contact</h2>
+  <p>Privacy requests: <a href="mailto:hello@familymedvault.com?subject=Reconnectly%20Privacy">hello@familymedvault.com</a>. Support: <a href="https://jchen8863988.github.io/Reconnectly-legal/support.html">support page</a>. Terms: <a href="https://jchen8863988.github.io/Reconnectly-legal/eula.html">EULA</a>.</p>
 
-  <h2 id="summary">2. Summary (plain language)</h2>
+  <h2>2. What we process (on-device)</h2>
   <ul>
-    <li><strong>Local-first core experience:</strong> Relationship reminders and contact notes you enter are primarily stored <strong>on your device</strong> (local database/storage), not uploaded by us to our servers for core App functionality—because we do not operate a first-party backend for those features in the current App version.</li>
-    <li><strong>No chat reading:</strong> The App does not request access to your messages, call logs, email inboxes, or other chat apps to “read conversations.”</li>
-    <li><strong>No private-content analysis / no “AI scanning” of your life:</strong> The App does not upload your contact list to an AI provider for analysis as part of the App’s functionality.</li>
-    <li><strong>Pure reminder system:</strong> Reminders are based on information you manually record in the App (for example cadence, dates, and notes you choose to save).</li>
-    <li><strong>Optional notifications:</strong> If you enable notifications, the device may use platform services to deliver scheduled reminders.</li>
-    <li><strong>Subscriptions:</strong> Purchases are processed by Apple; we do not receive your full payment card number from Apple as part of standard in-app purchase processing.</li>
-    <li><strong>No third-party analytics SDK</strong> is integrated in the current App codebase we ship for Reconnectly’s main navigation experience (as of the Last updated date above). If this changes in a future version, we will update this policy before collection begins.</li>
+    <li>Contact profiles, notes, cadence, channels, birthdays, anniversaries, custom events, categories;</li>
+    <li>Optional import from iOS Contacts (name, first phone/email, birthday when available) — local only, with your permission, including limited access selections;</li>
+    <li>Local notifications (cadence, dates, optional ~90-day backup nudge for Pro);</li>
+    <li>App settings (language, theme, notifications, dismissed reminders, plan state, backup export timestamp);</li>
+    <li>On-device insights/heat metrics; free tier capped at 30 contacts; Pro unlocks advanced features;</li>
+    <li>Quick actions open system sms/tel/mailto — we do not read message content;</li>
+    <li>Pro: JSON backup/import you save/open yourself — no cloud sync by us.</li>
   </ul>
 
-  <p class="small"><strong>Note for regulators &amp; reviewers:</strong> Where Apple processes data as an independent platform provider (payments, App Store distribution, push transport), Apple’s privacy notices also apply.</p>
-    <h2 id="categories">3. Categories of information we process</h2>
-  <p>Depending on how you use the App, we may process the following categories of information <strong>on-device</strong> and/or through <strong>platform providers</strong> as described below.</p>
-
-  <h3>3.1 Information you provide in the App</h3>
+  <h2>3. What we do not do</h2>
   <ul>
-    <li><strong>Contact-style relationship records</strong> you create (for example name fields, relationship labels, cadence preferences, notes, topics, and important dates you choose to store).</li>
-    <li><strong>App settings</strong> you configure (for example language/theme preferences, notification opt-in state, and subscription entitlement flags stored locally for UI gating).</li>
-    <li><strong>Backup files</strong> if you export data: the export contains what you already stored in the App (you control where it is shared or stored).</li>
+    <li>No user accounts or login servers; no cloud sync of contact content;</li>
+    <li>No AI; cadence copy may use built-in local templates when notes/topic are empty;</li>
+    <li>No sale of data; no third-party ad/analytics SDKs in the current release;</li>
+    <li>No reading of SMS, email, or third-party chat apps.</li>
   </ul>
 
-  <h3>3.2 Automatically generated / technical information (device-local)</h3>
-  <ul>
-    <li><strong>Operational data</strong> needed for the App to run on your device (for example local timestamps, local scheduling metadata for reminders).</li>
-    <li><strong>Localization-related inputs</strong> used by the platform/localization libraries to display the App in your chosen language where supported.</li>
-  </ul>
+  <h2>4. Purchases &amp; sharing</h2>
+  <p>Pro features use App Store auto-renewable subscriptions processed by Apple. We do not collect payment card data. We do not sell personal information. Sharing occurs when you export/share data yourself, through Apple services, or when required by law.</p>
 
-  <h3>3.3 Purchase-related information (via Apple)</h3>
-  <ul>
-    <li>If you subscribe, Apple processes payment and subscription eligibility. We may receive limited transaction metadata through the platform’s in-app purchase APIs (for example product identifiers and subscription state signals) to unlock features in the App.</li>
-  </ul>
+  <h2>5. Retention, security, children, changes</h2>
+  <p>Data remains on your device until you delete it or uninstall the app. Backup files are controlled by you. We use local storage and minimal permissions. Not directed to children under 13. We may update this policy; continued use constitutes acceptance where permitted by law.</p>
 
-  <h2 id="sources">4. Sources of information</h2>
-  <ul>
-    <li><strong>You</strong>, when you type or select information in the App.</li>
-    <li><strong>Your device</strong>, when the App stores information locally or schedules reminders.</li>
-    <li><strong>Apple</strong>, when you purchase or restore subscriptions, or when platform services are used to deliver notifications.</li>
-  </ul>
+  <h2>6. Limitation of liability</h2>
+  <p>To the maximum extent permitted by law, the app is provided “as is.” The independent developer is not liable for indirect or consequential damages, lost data, reliance on reminders or insights, or third-party services. Some jurisdictions do not allow certain limitations.</p>
 
-  <h2 id="purposes">5. Purposes of processing &amp; legal bases (EEA/UK/Switzerland users)</h2>
-  <p>If data protection laws such as the GDPR/UK GDPR apply to you, we describe our bases below at a high level. Because the App is operated by an independent developer and is primarily local-first, most processing occurs <strong>on your device</strong> to perform the contract with you (providing the App you requested) and/or based on your consent where the law requires it (for example optional notifications).</p>
-  <ul>
-    <li><strong>Provide core App functionality</strong> (local storage of your entries; generating reminders from your entries): <em>performance of a contract</em> / <em>legitimate interests</em> (operating and securing the App), depending on context.</li>
-    <li><strong>Optional push notifications</strong>: typically <em>consent</em> where required (you can turn them off in App settings and/or system settings).</li>
-    <li><strong>In-app subscriptions</strong>: <em>performance of a contract</em> (processing necessary to deliver purchased features) and compliance with applicable commerce rules.</li>
-    <li><strong>Communications with you</strong> when you email us: <em>legitimate interests</em> (responding to requests) and/or <em>performance of a contract</em> as applicable.</li>
-  </ul>
-  <p class="small">We do not use your manually entered relationship notes to train third-party AI models through the App’s functionality as described in this policy for the current version.</p>
-    <h2 id="sharing">6. How information is shared</h2>
-  <ul>
-    <li><strong>We do not sell your personal information</strong> and we do not “share” personal information for cross-context behavioral advertising as those terms are commonly used in U.S. state privacy laws, <strong>as part of the App’s own functionality in the current version</strong>.</li>
-    <li><strong>Apple:</strong> Apple processes data related to App distribution, in-app purchases/subscriptions, and platform services. Apple acts as an independent business in those contexts.</li>
-    <li><strong>No data brokers:</strong> We do not sell contact lists to data brokers.</li>
-    <li><strong>Legal &amp; safety:</strong> We may preserve or disclose information if required by law, regulation, legal process, or governmental request, or to protect rights, safety, and integrity (to the extent reasonably necessary and proportionate).</li>
-  </ul>
+  <h2>7. Your rights</h2>
+  <p>You may contact us to exercise applicable access, correction, or deletion rights. Much data can be edited or removed in-app.</p>
+</section>
 
-  <h2 id="retention">7. Retention</h2>
-  <ul>
-    <li><strong>On-device content you create</strong> remains on your device until you delete it, uninstall the App, or use App features that remove/replace data (for example import flows that replace local data, if you choose to use them).</li>
-    <li><strong>Emails you send us</strong> are retained only as long as needed to respond and handle your request, unless a longer period is required by law.</li>
-    <li><strong>Subscription records on Apple’s side</strong> are retained according to Apple’s policies and your Apple ID purchase history.</li>
-  </ul>
-
-  <h2 id="security">8. Security</h2>
-  <p>We implement reasonable technical and organizational measures appropriate to the risk, including a local-first architecture that reduces centralized exposure. <strong>No method of storage or transmission is 100% secure.</strong> You are responsible for maintaining the security of your device (passcode/biometrics), OS updates, and any backups you choose to export.</p>
-
-  <h2 id="rights">9. Your privacy rights &amp; choices</h2>
-  <h3>9.1 All users (practical controls in the App)</h3>
-  <ul>
-    <li><strong>Edit or delete</strong> information you stored in the App using the App’s screens (where available).</li>
-    <li><strong>Notifications:</strong> toggle in App settings (where provided) and in your device’s system settings.</li>
-    <li><strong>Subscriptions:</strong> manage/cancel through Apple’s subscription management UI for iOS.</li>
-    <li><strong>Uninstall:</strong> removing the App may delete locally stored App data depending on platform behavior; review your device backup settings.</li>
-  </ul>
-
-  <h3>9.2 EEA / UK / Switzerland</h3>
-  <p>You may have rights to access, rectification, erasure, restriction, objection, portability, and to lodge a complaint with a supervisory authority, subject to applicable law. Because processing is largely on-device, some requests may be fulfilled by you deleting data in the App or uninstalling. Contact us at <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> for requests we can reasonably handle as the App operator.</p>
-
-  <h3>9.3 United States — California residents (CPRA summary)</h3>
-  <p>California residents may have additional rights regarding personal information under the California Privacy Rights Act (CPRA), including rights to know/access, delete, and correct certain personal information, and to limit use of sensitive personal information (where applicable). We do not sell personal information or share it for cross-context behavioral advertising as part of the App’s current functionality. To submit a request, email <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> from the email address you used to contact us (or include enough information for us to verify your request as permitted by law). You may designate an authorized agent where legally permitted.</p>
-  <p class="small"><strong>Non-discrimination:</strong> We will not discriminate against you for exercising privacy rights granted by applicable law.</p>
-    <h2 id="children">10. Children</h2>
-  <p>The App is intended for adults managing personal relationships and reminders. It is <strong>not directed to children</strong> under 13 (or under 16 where a higher age applies). If you believe a child has provided information to us directly by email, contact us and we will take appropriate steps.</p>
-
-  <h2 id="international">11. International users &amp; transfers</h2>
-  <p>If you contact us by email, your message may be processed in the country where your email provider or our email inbox is hosted. Apple may process purchase-related data globally in accordance with Apple’s policies. If you are in the EEA/UK/Switzerland and transfers occur, we rely on appropriate safeguards where required (for example standard contractual clauses for email support processing, where applicable).</p>
-
-  <h2 id="changes">12. Changes to this policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will post the updated version by updating the “Last updated” date and, where required by law or reasonable practice, provide additional notice (for example in-app notice for material changes).</p>
-
-  <h2 id="apple">13. Apple App Store &amp; platform disclosures</h2>
-  <ul>
-    <li><strong>App Store distribution:</strong> Apple processes information in connection with downloading/updating apps and fraud/abuse prevention.</li>
-    <li><strong>In-App Purchases:</strong> Purchases are processed by Apple as the payment platform; we receive only what the operating system / StoreKit-style APIs provide to unlock features.</li>
-    <li><strong>Push notifications:</strong> Delivery may rely on Apple Push Notification service (APNs). Notification payloads should be designed to minimize personal data; you may disable notifications at any time.</li>
-    <li><strong>App Privacy “tracking”:</strong> In the current App version described by this policy, we do not enable cross-app tracking frameworks for advertising attribution in Reconnectly. If that changes, we will update this policy and App Store privacy answers accordingly.</li>
-  </ul>
-
-  <h2 id="contact">14. Contact</h2>
-  <p>For privacy questions or requests, contact:</p>
-  <p><strong>Email:</strong> <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a></p>
-  <p class="small">If you contact us, please include: (i) your country/region, (ii) a clear description of your request, and (iii) the platform (iOS/iPadOS) and App version if known.</p>
-
-  <h2 id="legal">15. Legal limitations (individual developer)</h2>
-  <p>To the maximum extent permitted by applicable law, the App is provided “as is.” Nothing in this policy grants rights beyond what applicable law requires, and nothing limits any non-waivable statutory rights you may have as a consumer.</p>
-
-  <p class="small" style="margin-top:2rem;">© 2026 Reconnectly. All rights reserved.</p>
 </body>
 </html>
