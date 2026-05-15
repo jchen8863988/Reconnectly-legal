@@ -1,112 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reconnectly — Technical Support</title>
+  <meta name="description" content="Reconnectly 技术支持 — 本地优先关系提醒应用（独立开发者）。版本 v2026-05-15。" />
+  <title>技术支持 — Reconnectly</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; max-width: 48rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; color: #111; }
-    @media (prefers-color-scheme: dark) { body { color: #eee; background: #121212; } a { color: #8ab4ff; } }
-    h1 { font-size: 1.65rem; margin-top: 0; }
-    h2 { font-size: 1.12rem; margin-top: 1.6rem; border-bottom: 1px solid rgba(0,0,0,.12); padding-bottom: .2rem; }
-    @media (prefers-color-scheme: dark) { h2 { border-bottom-color: rgba(255,255,255,.15); } }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", sans-serif; line-height: 1.65; max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; color: #1a1a1a; background: #fff; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121417; }
+      .meta { color: #aaa; }
+      h2 { border-bottom-color: rgba(255,255,255,.2); }
+      .notice { background: rgba(255,255,255,.06); border-left-color: #888; }
+      .notice.important { border-left-color: #c08400; background: rgba(192,132,0,.12); }
+    }
+    h1 { font-size: 1.55rem; margin-top: 0; line-height: 1.3; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; border-bottom: 1px solid rgba(128,128,128,.35); padding-bottom: .3rem; }
+    h3 { font-size: 1rem; margin-top: 1.2rem; }
     p, li { font-size: 0.95rem; }
-    .muted { opacity: .85; font-size: 0.9rem; }
-    .box { border: 1px solid rgba(0,0,0,.12); border-radius: .5rem; padding: .75rem 1rem; margin: 1rem 0; }
-    @media (prefers-color-scheme: dark) { .box { border-color: rgba(255,255,255,.15); } }
-    ul { padding-left: 1.25rem; }
-    .small { font-size: 0.82rem; }
-    code { font-size: 0.88em; padding: .1em .35em; border-radius: .25rem; background: rgba(0,0,0,.06); }
-    @media (prefers-color-scheme: dark) { code { background: rgba(255,255,255,.08); } }
+    ul, ol { padding-left: 1.35rem; }
+    .meta { color: #555; font-size: 0.9rem; margin-bottom: 1.25rem; }
+    .notice { border-left: 4px solid #444; padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(128,128,128,.07); font-size: 0.93rem; }
+    .notice.important { border-left-color: #b45309; background: rgba(180,83,9,.08); }
+    a { color: #2563eb; }
+    @media (prefers-color-scheme: dark) { a { color: #7ba6ff; } }
+    code { font-size: 0.88em; word-break: break-word; }
+    .en { margin-top: 2.75rem; padding-top: 1.75rem; border-top: 2px solid rgba(128,128,128,.35); }
   </style>
 </head>
 <body>
-  <h1>Technical Support — Reconnectly</h1>
-  <p class="muted"><strong>Last updated:</strong> 13 May 2026</p>
 
-  <div class="box">
-    <p class="small"><strong>Support email:</strong> <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a><br />
-      <strong>Operator:</strong> Reconnectly is operated by an <strong>independent developer</strong> (“we”, “us”). Support is provided on a best-effort basis.</p>
+<header>
+  <h1>技术支持 — Reconnectly</h1>
+  <p class="meta">
+    <strong>版本：</strong>v2026-05-15<br />
+    <strong>更新日期：</strong>2026 年 5 月 15 日<br />
+    <strong>应用：</strong>Reconnectly（Apple App Store，含 iPhone 与 iPad）<br />
+    <strong>运营者：</strong>独立个人开发者<br />
+    <strong>支持邮箱：</strong><a href="mailto:hello@familymedvault.com?subject=Reconnectly%20Support">hello@familymedvault.com</a>（多应用通用支持邮箱）
+  </p>
+</header>
+
+<div class="notice important">
+  <p><strong>紧急说明：</strong>Reconnectly <strong>不提供</strong>紧急服务、心理咨询或医疗支持。若您或他人有紧急危险，请立即拨打当地紧急电话或联系专业机构。</p>
+</div>
+
+<div class="notice">
+  <p><strong>产品定位：</strong>Reconnectly 是<strong>本地优先</strong>的私人关系维护与提醒工具。联系人数据默认仅存于您的设备；运营者<strong>不运营</strong>可代为恢复联系人内容的云端客服后台。我们无法在邮件中「远程查看」或「找回」您未自行备份的数据。</p>
+</div>
+
+<h2>1. 如何联系我们</h2>
+<p>请发送邮件至：<a href="mailto:hello@familymedvault.com?subject=Reconnectly%20Support">hello@familymedvault.com</a>（建议主题包含「Reconnectly」）。为便于排查，请在邮件中尽量提供：</p>
+<ul>
+  <li>问题简述与复现步骤；</li>
+  <li>应用版本（设置页或 App Store 应用信息中的版本号）；</li>
+  <li>设备型号与 iOS 版本；</li>
+  <li>是否使用 Pro 订阅、是否曾导出 JSON 备份；</li>
+  <li>相关截图（请勿包含您不愿分享的他人隐私信息）。</li>
+</ul>
+<p><strong>响应时间：</strong>独立开发者通常在 <strong>3–7 个工作日</strong>内回复（节假日可能顺延）。我们无法保证 24 小时实时支持。重复或无关邮件可能在法律允许范围内不予回复。</p>
+<p>相关文档：<a href="https://jchen8863988.github.io/Reconnectly-legal/privacy-policy.html">隐私政策</a> · <a href="https://jchen8863988.github.io/Reconnectly-legal/eula.html">用户协议（EULA）</a></p>
+
+<h2>2. 系统要求与获取方式</h2>
+<ul>
+  <li><strong>平台：</strong>通过 Apple App Store 安装的 iOS 应用（兼容 iPhone；iPad 以 App Store 兼容模式运行）；</li>
+  <li><strong>网络：</strong>日常使用<strong>不依赖</strong>运营者服务器；购买 Pro、App Store 更新需网络；</li>
+  <li><strong>权限（可选）：</strong>通讯录（导入时）、通知（本地提醒）、文件/分享（Pro 备份导出/导入）；</li>
+  <li><strong>语言与界面：</strong>应用内支持中文/英文与浅色/深色主题。</li>
+</ul>
+
+<h2>3. 功能概览（当前版本）</h2>
+<ul>
+  <li>联系人：手动添加或从 iOS 通讯录导入（含「有限访问」勾选）；关系类型、联系节奏、偏好渠道、笔记、生日/纪念日、自定义分类与自定义重要事件；</li>
+  <li>提醒：联系节奏、生日/纪念日、自定义事件；可选<strong>本地通知</strong>（非运营者推送服务器）；</li>
+  <li>统计：关系热度、报告/洞察（Pro 含高级统计）；免费版最多 <strong>30</strong> 个联系人；</li>
+  <li>快捷联系：短信/电话/邮件通过系统跳转（<code>sms</code> / <code>tel</code> / <code>mailto</code>）；</li>
+  <li>Pro：无限联系人、高级统计、自定义分类、任意天数节奏、本地 <strong>JSON 备份/导入</strong>（手动，无运营者云同步）、开启通知时约每 90 天一次的温和备份提醒；</li>
+  <li><strong>不提供：</strong>账号登录、运营者云同步、生成式 AI、读取您的短信/微信等第三方聊天内容。</li>
+</ul>
+
+<h2>4. 常见问题</h2>
+
+<h3>4.1 通知未收到或不准时</h3>
+<ol>
+  <li>在 iOS「设置 → 通知」中确认已允许 Reconnectly 通知；</li>
+  <li>在应用「设置」中确认已开启本地通知；</li>
+  <li>确认联系人已设置联系节奏或相关日期，且未被忽略；</li>
+  <li>低电量模式、专注模式、屏幕使用时间等可能影响送达；</li>
+  <li>提醒在设备本地调度，卸载重装或清除数据可能需重新授权并等待下次调度。</li>
+</ol>
+<p>许可方不保证提醒必达或准时；详见 EULA 免责声明。</p>
+
+<h3>4.2 无法从通讯录导入</h3>
+<ol>
+  <li>在「设置 → 隐私与安全性 → 通讯录」中授予 Reconnectly 权限；</li>
+  <li>若使用 iOS「有限通讯录访问」，请在系统界面中勾选要导入的联系人；</li>
+  <li>导入后数据保存在本机；可在应用内编辑关系类型与提醒周期。</li>
+</ol>
+
+<h3>4.3 换机或数据丢失</h3>
+<p>Reconnectly <strong>无</strong>运营者托管的云备份。换机前 Pro 用户请使用「导出 JSON 备份」并通过 AirDrop、文件 App、iCloud Drive 等自行保存；在新设备安装应用并订阅 Pro 后使用「从备份导入」。<strong>未备份的数据无法由运营者恢复。</strong></p>
+
+<h3>4.4 导入备份会覆盖现有数据吗？</h3>
+<p>会。导入前应用会提示；请确认备份文件来源正确。错误导入可能导致数据被覆盖，运营者不承担责任。</p>
+
+<h3>4.5 免费版与 Pro 的区别</h3>
+<ul>
+  <li><strong>免费：</strong>最多 30 个联系人、基础提醒与统计；</li>
+  <li><strong>Pro（月付/年付）：</strong>无限联系人、高级统计、自定义分类、任意天数节奏、JSON 备份/导入等（以应用内展示为准）。</li>
+</ul>
+
+<h3>4.6 提醒文案从哪里来？</h3>
+<p>通知内容根据您设备上的联系人信息在<strong>本机</strong>生成，可结合您的笔记/下次话题；若无相关内容，可能轮换使用<strong>内置本地模板</strong>（<strong>非 AI</strong>）。</p>
+
+<h2>5. 订阅、付款与退款（Apple）</h2>
+<p>Pro 订阅通过 <strong>Apple App Store（StoreKit）</strong> 购买与管理。运营者<strong>不</strong>直接处理银行卡或退款。</p>
+<ul>
+  <li><strong>购买 / 恢复购买：</strong>在应用内 Paywall 或设置中操作；亦可在 App Store「已购项目」中恢复；</li>
+  <li><strong>查看或取消订阅：</strong>「设置 → [您的姓名] → 订阅」；</li>
+  <li><strong>退款：</strong>向 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 或 Apple 支持申请，适用 Apple 政策；</li>
+  <li><strong>自动续订：</strong>除非在计费周期结束前至少 24 小时（或 Apple 要求更长期间）取消，否则将自动续订；</li>
+  <li><strong>价格：</strong>以 App Store 与您所在地区显示为准。</li>
+</ul>
+<p>订阅状态问题若无法通过 Apple 解决，可邮件联系我们并附上 Apple 订单截图（可遮挡敏感信息）。</p>
+
+<h2>6. 隐私与数据请求</h2>
+<p>联系人内容默认不上传至运营者服务器。隐私相关请求请邮件至上述地址（主题注明「隐私」），并参阅<a href="https://jchen8863988.github.io/Reconnectly-legal/privacy-policy.html">隐私政策</a>。您通常可在应用内直接编辑或删除数据；卸载应用可删除本地应用数据。</p>
+
+<h2>7. 反馈、错误报告与 TestFlight</h2>
+<p>欢迎通过邮件反馈功能建议或错误。请说明是否使用 TestFlight 或开发客户端（Dev Client）；测试版可能请求本地网络以加载调试资源，<strong>仅用于开发/测试</strong>。生产版问题请优先说明 App Store 正式版版本号。</p>
+
+<h2>8. 支持范围与责任限制</h2>
+<p>在适用法律允许的最大范围内：</p>
+<ul>
+  <li>本页面及邮件回复仅供一般产品协助，<strong>不构成</strong>法律、医疗或心理咨询意见；</li>
+  <li>运营者不对因遵循本页建议、第三方 App、iOS 更新、用户未备份或误操作导致的数据丢失或后果承担责任；</li>
+  <li>对 Apple 服务、StoreKit、系统通知或第三方云盘/通讯 App 的问题，请优先联系 Apple 或相应服务商；</li>
+  <li>完整责任限制以<a href="https://jchen8863988.github.io/Reconnectly-legal/eula.html">用户协议（EULA）</a>为准。</li>
+</ul>
+
+<h2>9. 页面变更</h2>
+<p>我们可能更新本支持页面；重大变更将在本页公布日期。App Store Connect 中的 Support URL 指向本页最新版本。</p>
+
+<section class="en" lang="en">
+  <h1>Technical Support — Reconnectly</h1>
+  <p class="meta"><strong>Version:</strong> v2026-05-15 · <strong>Updated:</strong> 15 May 2026 · <strong>Operator:</strong> independent individual developer</p>
+
+  <div class="notice important">
+    <p><strong>Emergency:</strong> Reconnectly is not an emergency or mental-health service. Call local emergency services if needed.</p>
   </div>
 
-  <p><strong>中文用户：</strong>您可用中文或英文发送邮件至上述邮箱；请在邮件中尽量附上设备型号、系统版本与 App 版本，便于排查。</p>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:hello@familymedvault.com?subject=Reconnectly%20Support">hello@familymedvault.com</a>. Include app version, iOS version, device model, and steps to reproduce. Typical reply within 3–7 business days.</p>
 
-  <h2 id="scope">1. What this page covers</h2>
-  <p>This page explains how to get help for the <strong>Reconnectly</strong> mobile application (the “<strong>App</strong>”): installation issues, basic troubleshooting, feature questions, and how to report bugs. It also clarifies what is handled by <strong>Apple</strong> (for example certain purchase and refund flows).</p>
+  <h2>Product</h2>
+  <p>Local-first relationship reminders for iPhone/iPad. No licensor cloud database; we cannot remotely restore contact data you did not back up yourself. Optional iOS Contacts import, local notifications, on-device stats. Free: up to 30 contacts. Pro (monthly/yearly via Apple): unlimited contacts, advanced stats, categories, custom cadence, manual JSON backup/import, optional ~90-day backup nudge. No accounts, no cloud sync, no generative AI.</p>
 
-  <h2 id="platforms">2. Supported platforms &amp; distribution</h2>
-  <ul>
-    <li><strong>Primary distribution:</strong> Apple App Store for compatible <strong>iPhone / iPad</strong> devices running supported iOS/iPadOS versions.</li>
-    <li><strong>Not supported here:</strong> Enterprise sideloading, jailbroken devices, modified OS builds, or unsupported OS versions (support may be declined if the environment is unsafe or non-reproducible).</li>
-    <li><strong>Development builds:</strong> If you are testing a non–App Store build, include how the build was produced (for example Xcode / TestFlight) and the exact build number.</li>
-  </ul>
-    <h2 id="contact">3. How to contact support</h2>
-  <p>Email us at <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>. Please include:</p>
-  <ul>
-    <li><strong>Subject line</strong> starting with <code>[Reconnectly Support]</code> (helps us triage).</li>
-    <li><strong>Device model</strong> (for example iPhone 15; iPad Pro 11-inch).</li>
-    <li><strong>iOS/iPadOS version</strong> (Settings → General → About → Software Version).</li>
-    <li><strong>App version</strong> (from the App Store listing or the App’s settings/about screen if shown).</li>
-    <li><strong>Language/locale</strong> you use in the App (for example English / Chinese).</li>
-    <li><strong>Steps to reproduce</strong> (numbered list) and, if possible, <strong>screenshots</strong> (no sensitive personal information—blur names/notes if needed).</li>
-    <li><strong>Expected vs actual behavior</strong> in one short paragraph.</li>
-  </ul>
-  <p class="small"><strong>Security:</strong> Do not send passwords, recovery codes, government ID images, full payment card numbers, or unrelated highly sensitive documents. We will not ask you for your Apple ID password.</p>
+  <h2>Subscriptions &amp; refunds</h2>
+  <p>Managed by Apple (StoreKit). Cancel in Apple ID Subscriptions; refunds via Apple. Restore purchases in-app or via App Store.</p>
 
-  <h2 id="response">4. Response times (individual developer)</h2>
-  <p>We aim to acknowledge most emails within <strong>5 business days</strong> and provide a first substantive response within <strong>10 business days</strong>, excluding holidays and high-volume periods. Complex bugs may require additional investigation or an App update.</p>
-  <p class="small"><strong>No SLA:</strong> Unless required by mandatory consumer law, we do not guarantee a specific resolution time or outcome.</p>
+  <h2>Backup &amp; new phone</h2>
+  <p>Export JSON while on Pro, save via system share sheet, import on new device. Import overwrites local data. No licensor-hosted cloud backup.</p>
 
-  <h2 id="help">5. What we can help with</h2>
-  <ul>
-    <li>App crashes, freezes, or unexpected UI behavior (with reproduction steps).</li>
-    <li>Questions about core features described in the App Store listing (contacts/reminders/notes workflows).</li>
-    <li>Local data questions at a high level (for example how reminders are intended to work), without requesting unnecessary private content.</li>
-    <li><strong>“Restore purchases”</strong> guidance for App Store subscriptions (see Section 6).</li>
-  </ul>
-    <h2 id="apple">6. Purchases, billing, refunds (Apple-handled items)</h2>
-  <p>For subscriptions purchased through the Apple App Store:</p>
-  <ul>
-    <li><strong>Billing and refunds</strong> are typically processed under <strong>Apple’s policies</strong> and tools (for example subscription management on your device).</li>
-    <li>If your issue is “I was charged but don’t have access,” include your <strong>Apple purchase receipt details you are comfortable sharing</strong> (for example date/time and product name) and what you see inside the App.</li>
-    <li>We cannot modify Apple invoices, tax documents, or Apple ID account settings on your behalf.</li>
-  </ul>
-  <p class="small">Apple support: <a href="https://support.apple.com/" rel="noopener noreferrer">https://support.apple.com/</a> (opens in a new tab).</p>
+  <h2>Links</h2>
+  <p><a href="https://jchen8863988.github.io/Reconnectly-legal/privacy-policy.html">Privacy Policy</a> · <a href="https://jchen8863988.github.io/Reconnectly-legal/eula.html">EULA</a></p>
 
-  <h2 id="troubleshoot">7. Quick troubleshooting checklist</h2>
-  <ul>
-    <li>Update to the latest iOS/iPadOS supported by your device; install the latest App Store version of Reconnectly.</li>
-    <li>Restart the device and try again.</li>
-    <li>Check <strong>Notifications</strong> permissions (Settings → Notifications → Reconnectly) if reminders are not appearing.</li>
-    <li>Confirm <strong>Focus / Do Not Disturb</strong> modes and scheduled summary settings are not blocking alerts.</li>
-    <li>Ensure sufficient storage space; low storage can cause instability.</li>
-    <li>If the App won’t open after an OS update, reinstall from the App Store (note: local data behavior depends on iOS backup/restore settings—see Section 8).</li>
-  </ul>
+  <h2>Liability</h2>
+  <p>Support information is provided as-is. See the EULA for full limitations. Apple handles billing and subscription infrastructure.</p>
+</section>
 
-  <h2 id="data">8. Data, backups, and reinstall</h2>
-  <p>Reconnectly is designed as a <strong>local-first</strong> app. Reinstalling or clearing app data may affect locally stored information depending on platform behavior and your backup settings.</p>
-  <ul>
-    <li>If you use <strong>export/backup</strong> features in the App (where available), keep exported files secure and only import files you trust.</li>
-    <li>We do not operate a first-party cloud restore service for core App data in the current version described here.</li>
-  </ul>
-    <h2 id="limits">9. Support limitations (protecting users and an independent developer)</h2>
-  <ul>
-    <li>Support is provided for the <strong>generally available App Store build</strong> unless we explicitly agree otherwise (for example coordinated beta testing).</li>
-    <li>We may decline support requests that require processing unlawful content, violating others’ rights, or circumventing security or subscription controls.</li>
-    <li>We do not provide on-site support, phone hotlines, remote desktop control, or legal advice.</li>
-    <li>We are not responsible for third-party services (Apple, carriers, MDM profiles, VPNs, firewalls) beyond reasonable guidance.</li>
-  </ul>
-
-  <h2 id="privacy">10. Privacy when you contact us</h2>
-  <p>If you email support, we will use your message contents and email address to respond and to detect abuse/fraud as needed. See the App’s <strong>Privacy Policy</strong> URL provided in the App Store listing for full details.</p>
-
-  <h2 id="feature">11. Feature requests</h2>
-  <p>We welcome suggestions. Feature requests are considered on a best-effort basis and may not be implemented. Timelines are not guaranteed.</p>
-
-  <h2 id="legal">12. No waiver; governing notices</h2>
-  <p>This support page is informational and does not modify the <strong>End User License Agreement (EULA)</strong> or <strong>Privacy Policy</strong> unless expressly stated. Mandatory consumer rights in your jurisdiction still apply.</p>
-
-  <p class="small" style="margin-top:2rem;">© 2026 Reconnectly</p>
 </body>
 </html>
